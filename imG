@@ -1,1 +1,502 @@
 
+/* Estilo general */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Encabezado */
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Banner */
+/* Menú */
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #ff0000;
+}
+/* ok fin agregado */
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Títulos */
+
+h1 {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Secciones */
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Productos en columnas */
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes de productos */
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Contenido tarjeta */
+
+.tarjeta h3 {
+    margin: 15px;
+    color: #ff0000;
+}
+
+.tarjeta p {
+    margin: 15px;
+    text-align: justify;
+}
+
+/* Contacto */
+
+.contacto {
+    text-align: center;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/* Galería */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+/* Testimonios */
+
+.testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.testimonio p {
+    font-style: italic;
+}
+
+.testimonio h4 {
+    color: #ff0000;
+    margin-top: 15px;
+}
+/* Formulario */
+
+.formulario {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+.formulario button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #ff0000;
+}
+/* Botón WhatsApp */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 65px;
+    height: 65px;
+
+    background-color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.whatsapp:hover {
+    transform: scale(1.3);
+}
+.whatsapp img {
+    width:45px;
+} 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINISUPER EL PARQUE</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <nav>
+        <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#galería">Galería</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    
+
+        <h1>PRODUTS</h1>
+
+        <img src="img/principal.jpeg" alt="Banner MINISUPER EL PARQUE" class="banner">
+
+        <p class="descripcion">
+            Nos enfocamos en venderte productos de alta calidad. Todo lo
+            que busques lo tenemos nosotros ven y compra
+        </p>
+
+    </header>
+
+    <section class="contenido" id="nosotros">
+
+        <h2>Misión</h2>
+
+        <p>
+             La misión del supermercado Minisúper es ofrecer productos de 
+buena calidad a precios accesibles, garantizando siempre una 
+atención respetuosa, amable y eficiente para todos los clientes. 
+Esta misión es fundamental, ya que orienta el funcionamiento 
+del negocio y permite mantener un enfoque claro en el servicio 
+que se brinda a la comunidad. El supermercado busca 
+satisfacer las necesidades básicas de las familias del sector, 
+ofreciendo productos esenciales como alimentos, bebidas, 
+productos de aseo y otros artículos necesarios para el hogar. 
+Además, se procura que cada cliente tenga una experiencia de 
+compra positiva, en la cual pueda encontrar lo que necesita de 
+manera rápida y sin complicaciones. Otro aspecto importante 
+dentro de su misión es mantener un ambiente limpio, ordenado 
+y seguro, lo cual contribuye a generar confianza en los clientes. 
+También se busca mejorar continuamente el servicio, teniendo 
+en cuenta las opiniones y sugerencias de las personas que 
+frecuentan el establecimiento, lo cual permite adaptarse a sus 
+necesidades y ofrecer un mejor servicio cada día. De esta 
+manera, la misión del supermercado no solo se enfoca en la 
+venta de productos, sino también en la satisfacción del cliente y 
+en el fortalecimiento de la relación con la comunidad, lo cual es 
+clave para el crecimiento del negocio.
+        </p>
+
+        <h2>Visión</h2>
+
+        <p>
+            La visión del supermercado Minisúper es continuar creciendo y fortaleciendo
+su presencia en el sector, con el objetivo de convertirse en un negocio más
+organizado, completo y reconocido por la comunidad. Este crecimiento se plantea de
+manera progresiva, buscando siempre mejorar tanto la infraestructura como la
+calidad del servicio. Entre sus metas principales se encuentra ampliar el local,
+mejorar la distribución de los productos y aumentar la variedad de artículos
+disponibles, con el fin de satisfacer a un mayor número de clientes. Asimismo, se
+busca implementar nuevas estrategias que permitan optimizar el tiempo de atención y
+mejorar la experiencia de compra. A futuro, el supermercado espera adaptarse a los
+cambios del entorno y a las nuevas necesidades de los clientes, incorporando
+mejoras en la organización y en la presentación de los productos. El objetivo es
+mantenerse como un negocio competitivo, que pueda responder de manera eficiente
+a las exigencias del mercado. En general, la visión del supermercado se enfoca en el
+crecimiento continuo, la mejora constante y el compromiso con la calidad, buscando
+siempre ofrecer un mejor servicio a la comunidad y mantenerse como un lugar
+confiable para realizar compras
+        </p>
+
+    </section>
+
+    <section class="contenido" id="productos">
+
+        <h2>Nuestros Productos</h2>
+
+        <div class="productos">
+
+            <div class="tarjeta">
+
+                <img src="img/Gemini_Generated_Image_ip7mnzip7mnzip7m.png" alt="Quinua">
+
+                <h3>Verduras</h3>
+
+                <p>
+                  vendemos gran cantidad de verduras de todo tipo 
+                </p>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="img/Gemini_Generated_Image_gtvygugtvygugtvy.png" alt="Maíz">
+
+                <h3>Medicinas</h3>
+
+                <p>
+                  Medicinas tambien las encuentras aqui 
+                </p>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <img src="img/Gemini_Generated_Image_npp0fznpp0fznpp0.png" alt="Papa">
+
+                <h3>Productos</h3>
+
+                <p>
+                   Productos de comida y muhcos otros
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="contenido" id="galeria">
+
+    <h2>Galería</h2>
+
+    <div class="galeria">
+
+        <img src="img/sp1.jpg"Cultivo de quinua">
+
+        <img src="img/sp2.jpg" alt="Cosecha agrícola">
+
+        <img src="img/sp3.jpg" alt="Campo de maíz">
+
+        <img src="img/sp4.jpg" alt="Producción de papa">
+
+        <img src="img/sp5.jpg" alt="Agricultores trabajando">
+
+        <img src="img/sp6.jpg" alt="Productos andinos">
+
+    </div>
+
+</section>
+<section class="contenido" id="testimonios">
+
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="testimonios">
+
+        <div class="testimonio">
+            <p>
+                "La quinua tiene excelente calidad y llegó en perfectas condiciones."
+            </p>
+            <h4>- Juan Pérez</h4>
+        </div>
+
+        <div class="testimonio">
+            <p>
+                "Productos frescos y muy buen servicio al cliente."
+            </p>
+            <h4>- María Rodríguez</h4>
+        </div>
+
+        <div class="testimonio">
+            <p>
+                "La mejor opción para comprar productos agrícolas de confianza."
+            </p>
+            <h4>- Carlos Gómez</h4>
+        </div>
+
+    </div>
+
+</section>
+    <section class="contenido contacto" id="contacto">
+ 
+ <div class="datos-contactos"></div>
+        
+
+        <p>📞 Teléfono: 3185712321</p>
+
+        <p>📧 Correo: 20162334@inempasto.edu.co</p>
+    </div>
+    <h3>Envíanos un mensaje</h3>
+
+    <form class="formulario">
+
+        <label for="nombre">Nombre</label>
+
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre">
+
+        <label for="correo">Correo electrónico</label>
+
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="correo@ejemplo.com">
+
+        <label for="mensaje">Mensaje</label>
+
+        <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+    </section>
+
+    <footer>
+
+        <p>© 2026 Mini Super El Parque - Todos los derechos reservados</p>
+
+    </footer>
+<a
+    href="https://wa.me/573184712321"
+    class="whatsapp"
+    target="_black">
+
+    <img
+        src="img/bl.png"
+        alt="WhatsApp">
+
+</a>
+</body>
+
+</html>
