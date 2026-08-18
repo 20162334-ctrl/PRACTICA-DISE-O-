@@ -1,1 +1,254 @@
 
+/* Estilo general */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Encabezado */
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Banner */
+/* Menú */
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #ff0000;
+}
+/* ok fin agregado */
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Títulos */
+
+h1 {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Secciones */
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Productos en columnas */
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes de productos */
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Contenido tarjeta */
+
+.tarjeta h3 {
+    margin: 15px;
+    color: #ff0000;
+}
+
+.tarjeta p {
+    margin: 15px;
+    text-align: justify;
+}
+
+/* Contacto */
+
+.contacto {
+    text-align: center;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/* Galería */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+/* Testimonios */
+
+.testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.testimonio p {
+    font-style: italic;
+}
+
+.testimonio h4 {
+    color: #ff0000;
+    margin-top: 15px;
+}
+/* Formulario */
+
+.formulario {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+.formulario button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #ff0000;
+}
+/* Botón WhatsApp */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 65px;
+    height: 65px;
+
+    background-color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.whatsapp:hover {
+    transform: scale(1.3);
+}
+.whatsapp img {
+    width:45px;
+} 
